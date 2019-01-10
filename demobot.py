@@ -7,11 +7,11 @@ app = Flask(__name__)
 
 
 # When people visit the home page '/' use the hello_world function
-@app.route('/')
+@app.route('/', methods=['GET', 'POST'])
 def text0():
     return '<h2>AAAAAAAAAAAA!</h2>'
 
-@app.route('/ncss')
+@app.route('/ncss'=['GET', 'POST'])
 def text1():
     return 'LIAMs'
 
