@@ -5,7 +5,7 @@ from flask import Flask, request
 # Create your app (web server)
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/', methods=['GET', 'POST'])
 def greet_person():
     # Get the value of the 'text' query parameter
     # request.values is a dictionary (cool!)
